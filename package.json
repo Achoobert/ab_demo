@@ -1,0 +1,24 @@
+{
+  "name": "ab_demo",
+  "version": "1.0.0",
+  "description": "Demonstrate containorized appbuilder install",
+  "main": "UP.sh",
+  "scripts": {
+    "start_ab": "docker compose create && docker compose up -d",
+    "setup_definitions": "cd ./defs && bash ./upload.sh",
+    "test": "cypress open --project ./test",
+    "cypress:open": "cypress open --project ./test",
+    "test:ci": "cypress run --project ./test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "ab_demo"
+  },
+  "devDependencies": {
+    "@actions/core": "^1.10.1",
+    "@this-dot/cypress-indexeddb": "^2.0.1",
+    "cypress": "^12.8.1"
+  },
+  "author": "Isaac Schubert",
+  "license": "ISC"
+}
