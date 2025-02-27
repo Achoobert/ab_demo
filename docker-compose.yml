@@ -6,9 +6,9 @@ volumes:
   redis_data:
   # clamav:
 
-# networks:
-#   default:
-#     attachable: true
+networks:
+  default:
+    attachable: true
 # mcc:
 #   driver: bridge
 
