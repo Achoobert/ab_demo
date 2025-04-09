@@ -6,6 +6,8 @@
   "scripts": {
     "start": "electron .",
     "start_ab": "docker compose create && docker compose up -d",
+    "restart_ab": "docker compose down && docker compose up -d",
+    "halt_ab": "docker compose down",
     "setup_definitions": "cd ./defs && bash ./upload.sh",
     "test": "cypress open --project ./test",
     "cypress:open": "cypress open --project ./test",

@@ -96,3 +96,6 @@ The object view
 - Add a script to initialize a demo version on the user's machine.
 - Improve automation for local setup.
 solve no ingress network issue
+
+docker image rm $(docker image ls | grep ab-)
+docker volume rm $(docker volume ls | grep ab-)
